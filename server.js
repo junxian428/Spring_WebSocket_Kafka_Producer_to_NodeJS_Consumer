@@ -3,7 +3,7 @@ var Consumer = kafka.Consumer;
 var client = new kafka.KafkaClient({ kafkaHost: 'localhost:9092' });
 
 // Create a Kafka consumer
-var consumer = new Consumer(client, [{ topic: 'mytopic' }], { groupId: 'mygroup' });
+var consumer = new Consumer(client, [{ topic: 'mytopic3' }], { groupId: 'mygroup' });
 
 // Handle incoming messages
 consumer.on('message', function (message) {

@@ -32,7 +32,7 @@ public class Consumer {
 
 
 
-	@KafkaListener(topics="mytopic", groupId="mygroup")
+	@KafkaListener(topics="mytopic3", groupId="mygroup")
 	public void consumeFromTopic(String message) throws IOException {
 		System.out.println("Consummed message "+message);
 		//File log = new File("log.txt");
